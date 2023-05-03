@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f5f8;
+}
+nav {
+  line-height: unset;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+.logo {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3d535f;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 11px;
+}
+b {
+  font-size: 50px;
+  color: #7f00ff;
+}
+.navitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navitems li {
+  margin: 5px;
+  width: 150px;
+  text-align: center;
+}
+.navitems a {
+  font-size: 20px;
+  padding: 10px;
+  color: #3d535f;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.skills {
+  margin: auto;
+  width: 1100px;
+  padding: 100px 0;
+}
+.skills h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 25%;
+}
+.content {
+  display: flex;
+  margin-top: 50px;
+}
+.left {
+  width: 50%;
+}
+.left h1 {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 0;
+}
+.left p {
+  font-size: 18px;
+  margin: 20px;
+  line-height: 2em;
+  padding: 25;
+}
+.left a {
+  background-color: #7f00ff;
+  color: white;
+  padding: 10px 1px;
+  border: 2px solid #3d535f;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.left a:hover {
+  background-color: transparent;
+  color: #3d535f;
+}
+.right {
+  flex: 1;
+  margin-left: 8%;
+}
+.right .line {
+  margin-bottom: 15px;
+}
+.right .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right .info span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.right .bars {
+  background-color: lightgrey;
+  height: 5px;
+  width: 100%;
+  position: relative;
+}
+.right .bars::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #7f00ff;
+}
+.right .html::before {
+  width: 90%;
+}
+.right .css::before {
+  width: 65%;
+}
+.right .java::before {
+  width: 25%;
+}
